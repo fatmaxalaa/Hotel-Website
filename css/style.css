@@ -1,0 +1,974 @@
+* {
+        padding: 0px;
+        margin: 0px;
+}
+body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #f1f1f1;
+}
+
+.container{
+        width: 95%;
+        margin: auto;
+}
+.container-fluid {
+        width: 99%;
+        margin: auto;
+}
+.row {
+        display: flex;
+        justify-content: space-between;
+}
+
+/* Mobile portrait  */
+
+@media (min-width: 320px) {
+
+        /* header */
+
+        header .row {
+                flex-direction: column;
+                text-align: center;
+
+        }
+        header .row .left-side {
+                text-decoration: none;
+        }
+        header .row .left-side .logo {
+                background-color: #f44336;
+                padding: 10px;
+                
+        }
+        header .row .left-side .logo:hover{
+                background-color: rgb(155, 152, 152);
+                
+        }
+       header .row .left-side .logo .logotext {
+                text-decoration: none;
+                color: white;
+                font-weight: lighter;
+        }
+        header .row .left-side .logo .logotext:hover{
+                color: black;
+        }
+
+        header .row .left-side .room {
+                text-decoration: none;
+                padding: 8px;
+
+}
+header .row .left-side .room:hover{
+        background-color: rgb(202, 200, 200);
+}
+        header .row .left-side .about {
+                text-decoration: none;
+                padding: 8px;
+}
+header .row .left-side .about:hover{
+        background-color: rgb(202, 200, 200);
+
+}
+        header .row .left-side .contact {
+                padding: 8px;
+
+}
+header .row .left-side .contact:hover{
+        background-color: rgb(202, 200, 200);
+}
+        header .row .left-side .contacttext {
+        text-decoration: none;
+        color: black;
+}
+
+header .row .right-side .booknow {
+        text-decoration: none;
+        color: black;
+}
+
+header .row .right-side div {
+        padding: 8px;
+        background-color: rgb(230, 229, 229);
+}
+
+header .row .right-side div:hover{
+        background-color: rgb(202, 200, 200);
+}
+
+/* end of the header */
+
+/* banner */
+
+.banner .img .hotelimg{
+        width: 100%;
+        height: 500px;
+        position: relative;
+}
+.banner .boxform {
+        position: absolute;
+        top: 210px;
+        left: 8px;
+        width: 95%;
+        
+}
+
+.banner .boxform .redbg {
+        background-color: #f44336;
+        color: white;
+        padding: 15px;
+        
+}
+.banner .boxform {
+        background-color: white;
+        padding-bottom: 20px;
+}
+.banner .row {
+        flex-direction: column;
+} 
+.banner .row .label {
+        font-size: 15px;
+        padding-left: 10px;
+        
+}
+.banner .row .checkin {
+        width: 85%;
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 3px;
+        border: 1px solid #ccc;
+}
+.banner .row .checkinkid {
+        padding: 10px;
+        margin-right: 35px;
+        width:86% ;
+        margin-top: 3px;
+        border: 1px solid #ccc;
+        margin-left: 10px;
+}
+.banner form button {
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 8px;
+        width: 170px;
+        border: none;
+        background-color: rgb(114, 113, 113);
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+}
+.banner form button:hover {
+        background-color: rgb(179, 178, 178);
+        color: black;
+}
+
+/* end of the banner  */
+
+.rooms .row {
+        flex-direction: column;
+}
+.rooms .roomtext  {
+        font-size: 22px;
+}
+.rooms .roomparagraph {
+        font-size: 14px;
+}
+.row .label2 {
+        font-size: 15px;
+
+}
+.row .checkin2 {
+        padding: 8px;
+        width: 90%;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+}
+.row .button2 {
+        padding: 8px;
+        /* border: none; */
+        font-size: 17px;
+        width: 96% ;
+        border: black;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        margin-top: 5px;
+}
+.row .button2:hover{
+        background-color: rgb(167, 166, 166);
+        color: white;
+}
+/* rooms */
+.rooms .row {
+        flex-direction: column;
+}
+.singleroom {
+        background-color: white;
+        padding: 10px;
+}
+.singleroom .singleimg {
+        width: 100%;
+}
+.singleroom .singleprice {
+        color: grey;
+}
+.singleroom .button {
+        padding: 10px;
+        width: 100%;
+        margin-top: 5px;
+        background-color: black;
+        color: white;
+        border: black;
+        cursor: pointer;
+}
+.singleroom .button:hover{
+        background-color: rgb(168, 166, 166);
+        color: black;
+}
+.rooom .row {
+        flex-direction: column;
+}
+/* map */
+.row .mappragraph {
+        font-size: 15px;
+}
+.maparea .row {
+        flex-direction: column;
+}
+.row .mapimg {
+       width: 100%;
+}
+
+.mapinfo .row .info {
+        font-size: 18px;
+        text-align: center;
+}
+.mapinfo .row {
+        flex-direction: column;
+}
+.info .location {
+        color: #f44336;
+}
+.info .phone {
+        color: #f44336;
+}
+.info .envelope {
+        color: #f44336;
+}
+/* end of map  */
+/* red header */
+.redheader {
+        background-color: #f44336 ;
+        color: white;
+        padding: 40px;
+        font-size: 15px;
+        border-left: 5px rgb(202, 201, 201) solid;
+}
+.redheader .info-i{
+        background-color: #ff5722;
+        padding: 10px;
+        margin-right: 20px;
+}
+/* end of the red header */
+/* country list */
+.country .row{
+        flex-direction: column;
+}
+.country .Cinqueimg {
+        width: 100%;
+        position: relative;
+}
+.country .Cinquetext {
+        position: absolute;
+        top: 3631px;
+        color: white;
+        margin-left: 10px;
+}
+.country .newyorktext {
+        position: absolute;
+        top: 3873px;
+        color: white;
+        margin-left: 10px;
+}
+.country .newyorkimg{
+        width: 100%;
+}
+.country .santext {
+        position: absolute;
+        top: 4115px;
+        color: white;
+        margin-left: 10px;
+}
+.country .sanimg {
+        width: 100%;
+}
+.country .pisatext {
+        position: absolute;
+        top: 4359px;
+        color: white;
+        margin-left: 10px;
+}
+.country .pisaimg {
+        width: 100%;
+}
+.country .paristext {
+        position: absolute;
+        top: 4596px;
+        color: white;
+        margin-left: 10px;
+}
+.country .parisimg {
+        width: 100%;
+}
+/* end of the country list */
+/* mail header */
+
+.mailheader {
+        background-color:rgb(8, 8, 8);
+        opacity: 60%;
+        color: white;
+        height: 250px;
+        
+}
+ .mailheader:hover{
+         background-color: rgb(7, 7, 7);
+         color: white;
+         opacity: 100%;
+ }
+ .mailheader .offer {
+         margin-left: 10px
+ } 
+ .mailheader .join {
+         margin-left: 10px
+ }
+ .mailheader .maillabel {
+         margin-left: 10px
+ }
+ .mailheader .mail {
+         padding: 10px;
+         margin-left: 10px;
+         width: 80%;
+ }
+ .mailheader .subscribe {
+         padding: 10px;
+         margin-left: 10px;
+         margin-top: 10px;
+         width: 35%;
+         background-color: #f44336 ;
+         color: white;
+         border: none;
+         font-size: 15px;
+         cursor: pointer;
+ }
+ .mailheader .subscribe:hover{
+         background-color: rgb(199, 197, 197);
+         color: black;
+ }
+ /* end of the mail header  */
+
+ /* contact info  */
+ .info2 {
+         font-size: 15px;
+         margin-left: 15px;
+ }
+ .contactinfo .inputinfo {
+         padding: 5px;
+         margin-left: 5px;
+ }
+ .contactinfo .inputinfo .name {
+         padding: 15px;
+         width: 90%;
+         margin-bottom: 10px;
+         border: 1px solid #ccc;
+ }
+ .contactinfo .sendbutton {
+         padding: 15px;
+         margin-left: 10px;
+         background-color: black;
+         color: white;
+         border: none;
+         cursor: pointer;
+ }
+ .contactinfo .sendbutton:hover{
+         background-color: rgb(185, 185, 185);
+         color: black;
+ }
+ .info2 .location {
+        color: #f44336;
+        margin-right: 20px;
+}
+.info2 .phone {
+        color: #f44336;
+        margin-right: 20px;
+}
+.info2 .envelope {
+        color: #f44336;
+        margin-right: 20px;
+}
+ /* end of the contact info */
+
+ /* the footer */
+  .footer {
+          text-align: center;
+          background-color: black;
+          color: white;
+          margin-top: 20px;
+          padding: 40px;
+  }
+  .footer .credit {
+          margin-top: 20px;
+  }
+  .footer .credit .link {
+          color: white;
+  }
+.footer .credit .link:hover{
+        color: green;
+}
+/* end of the footer */
+
+}
+
+@media (min-width: 480px) {
+        /* country list  */
+
+        .country .Cinquetext {
+        position: absolute;
+        top: 3961px;
+}
+.country .newyorktext {
+        position: absolute;
+        top: 4319px;
+}
+
+.country .santext {
+        position: absolute;
+        top: 4675px;
+}
+
+.country .pisatext {
+        position: absolute;
+        top: 5047px;
+}
+
+.country .paristext {
+        position: absolute;
+        top: 5407px;
+}
+
+}
+
+/* Medium devices */
+
+@media (min-width: 600px) {
+        /* map */
+.row .mappragraph {
+        font-size: 17px;
+}
+/* country list */
+
+.country .Cinquetext {
+        position: absolute;
+        top: 4377px;
+        color: white;
+        margin-left: 10px;
+}
+.country .newyorktext {
+        position: absolute;
+        top: 4807px;
+        color: white;
+        margin-left: 10px;
+}
+
+.country .santext {
+        position: absolute;
+        top: 5262px;
+        color: white;
+        margin-left: 10px;
+}
+.country .pisatext {
+        position: absolute;
+        top: 5713px;
+        color: white;
+        margin-left: 10px;
+}
+.country .paristext {
+        position: absolute;
+        top: 6168px;
+        color: white;
+        margin-left: 10px;
+}
+/* end of the country list */
+}
+
+
+@media (min-width: 768px) {
+        /* header */
+
+        header .row {
+                flex-direction: row; 
+                /* background-color: white; */
+                }
+        header .row .left-side ul li  {
+                display: inline-block;
+                font-size: 18px;
+                padding-right: 10px;
+        }
+        header .row .right-side a {
+                font-size: 18px;
+        }
+        header .row .right-side div{
+                padding-bottom: 17px;
+        }
+        /* end of the header */
+
+        /* banner */
+        .banner .img .hotelimg {
+                height: 700px;
+        }
+        .banner .boxform  {
+                margin-left: 20px;
+                width: 65%;
+                top: 280px;
+        }
+        .banner .boxform .redbg{
+                padding: 15px;
+                font-size: 25px;
+
+        }
+        .banner .row {
+                 flex-direction: row;
+                justify-content: space-between;
+        }
+        .banner .row .label {
+                padding: 10px;
+                margin: 10px;
+        }
+        .banner .row .checkin{
+                /* margin: 10px; */
+                margin-left: 10px;
+                width: 84%;
+        }
+        .banner form button {
+                width: 200px;
+        }
+        /* end of the banner  */
+
+        .rooms .row {
+        flex-direction: row;
+}
+
+.row .checkin2 {
+        padding: 6px;
+        width: 85%;
+        margin-bottom: 8px;
+}
+.row .button2 {
+        width: 95%;
+        padding: 6px;
+        margin-top: 0px;
+        border: none;
+}
+
+/* rooms */
+.rooms .row {
+        flex-direction: row;
+}
+.singleroom {
+        background-color: white;
+        padding: 10px;
+}
+.singleroom .singletext {
+        font-size: 18px;
+        font-weight: lighter;
+}
+.singleroom .singleimg {
+        width: 100%;
+}
+.singleroom .singleprice {
+        color: grey;
+}
+.rooom .row {
+        flex-direction: row;
+}
+/* map */
+.row .mappragraph {
+        
+        font-size: 15px;
+        line-height: 1;
+        word-spacing: 5px;
+}
+.maparea .row {
+        flex-direction: row;
+        justify-content: space-evenly;
+}
+.row .mapimg {
+       width: 80%;
+       margin-left: 110px;
+       height: 350px;
+
+} 
+.maparea .row {
+        flex-direction: row;
+
+}
+.row .info {
+        font-size: 18px;
+}
+.mapinfo .row {
+        flex-direction: row;
+        justify-content: space-evenly;
+}
+
+/* end of map  */
+/* country list */
+.country .row{
+        flex-direction: row;
+        justify-content: space-between;
+}
+.country .Cinqueimg {
+        width: 98%;
+        position: relative;
+}
+.country .Cinquetext {
+        position: absolute;
+        top: 2229px;
+        color: white;
+        margin-left: 10px;
+}
+.country .newyorktext {
+        position: absolute;
+        top: 2079px;
+        color: white;
+        margin-left: 10px;
+}
+.country .newyorkimg{
+        width: 98%;
+}
+.country .santext {
+        position: absolute;
+        top: 2229px;
+        right: 287px;
+        color: white;
+        margin-left: 10px;
+}
+.country .sanimg {
+        width: 98%;
+}
+.country .pisatext {
+        position: absolute;
+        top: 2079px;
+        right: 160px;
+        color: white;
+        margin-left: 10px;
+}
+.country .pisaimg {
+        width: 98%;
+}
+.country .paristext {
+        position: absolute;
+        top: 2229px;
+        right: 155px;
+        color: white;
+        margin-left: 10px;
+}
+.country .parisimg {
+        width: 98%;
+}
+/* end of the country list */
+
+/* mail header */
+
+ .mailheader .subscribe {
+         width: 15%;
+         }
+         /* end of the mail header  */
+
+         /* contact info */
+
+        .contactinfo .sendbutton {
+         width: 25%;
+         font-size: 15px;
+ }
+  /* end of the contact info */
+
+
+}
+
+@media (min-width: 800px)  {
+        header .row .left-side .logo .logotext {
+                font-size: 17px;
+}
+ header .row .left-side .contacttext {
+         font-size: 17px;
+}
+header .row .right-side .booknow {
+        font-size: 17px;
+}
+/* end of header */
+
+.row .label2 {
+        font-size: 14px;
+
+}
+.row .checkin2 {
+        padding: 7px;
+        width:  85%;
+}
+.row .button2 {
+        padding: 7px;
+        font-size: 15px;
+        width: 97% ;
+        margin-top: 0px;
+}
+/* rooms */
+.singleroom .singletext {
+        font-size: 18px;
+        font-weight: lighter;
+}
+/* end of rooms */
+
+/* map */
+.row .mappragraph {
+        font-size: 15px;
+        line-height: 1;
+        word-spacing: 5px;
+        
+}
+.maparea .row {
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.row .mapimg {
+       width: 100%;
+       height: 350px;
+       margin-left: 20px;
+}
+
+.mapinfo .row .info {
+        font-size: 17px;
+}
+/* end of map  */
+/* mail header */
+
+ .mailheader .subscribe {
+         width: 15%;
+ }
+ /* end of the mail header  */
+ /* contact info */
+ .contactinfo .sendbutton {
+width: 22%;
+ }
+ /* end of the contact info */
+}
+
+@media (min-width: 992px) {
+        /* banner */
+        .banner .img .hotelimg {
+                height: 750px;
+        }
+        .banner .boxform  {
+                margin-left: 20px;
+                width: 60%;
+                top: 280px;
+        }
+
+        .banner .row {
+                 flex-direction: row;
+                justify-content: space-between;
+        }
+
+
+        .banner form button {
+                width: 200px;
+        }
+        .banner .row .checkin{
+                /* margin: 10px; */
+                margin-left: 10px;
+                width: 85%;
+        }
+
+
+}
+
+/* larger devices  */
+
+@media (min-width: 1024px) {
+        /* banner */
+
+        .banner .boxform {
+        position: absolute;
+        top: 210px;
+        left: 8px;
+        width: 60%;
+}
+
+.banner .row {
+        flex-direction: row;
+} 
+.banner .row .label {
+        font-size: 13px;
+}
+.banner .row .checkinkid {
+        padding: 10px;
+        margin-right: 35px;
+        width:86% ;
+        margin-top: 3px;
+        border: 1px solid #ccc;
+}
+
+.banner .row .checkin {
+        width: 85%;
+
+}
+/* end of the banner  */
+
+/* country list */
+
+.country .Cinquetext {
+        position: absolute;
+        top: 2398px;
+        color: white;
+        margin-left: 10px;
+}
+.country .newyorktext {
+        position: absolute;
+        top: 2209px;
+        color: white;
+        margin-left: 10px;
+}
+.country .santext {
+        position: absolute;
+        top: 2398px;
+        left: 512px;
+        color: white;
+        margin-left: 10px;
+}
+.country .pisatext {
+        position: absolute;
+        top: 2209px;
+        left: 770px;
+        color: white;
+        margin-left: 10px;
+}
+
+.country .paristext {
+        position: absolute;
+        top: 2398px;
+        left: 770px;
+        color: white;
+        margin-left: 10px;
+}
+/* end of the country list */
+
+}
+@media (min-width: 1519px) {
+        /* banner */
+.banner .img .hotelimg{
+        height: 700px;
+}
+.banner .boxform {
+        width: 40%;
+}
+.banner .row {
+        flex-direction: row;
+} 
+/* end of the banner  */
+.rooms .row {
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.row .checkin2 {
+        padding: 10px;
+        width: 100%;
+}
+.row .button2 {
+        padding: 10px;
+        width: 100% ;
+        margin-top: 0px;
+}
+/* map */
+.row .mappragraph {
+        font-size: 16px;
+        line-height: 22px;
+}
+.maparea .row {
+        flex-direction: row;
+}
+.mapinfo .row {
+        flex-direction: row;
+        margin-top: 15px;
+}
+/* end of map  */
+
+/* country list */
+.country .row{
+        flex-direction: row;
+}
+.country .Cinqueimg {
+        width: 98%;
+        position: relative;
+}
+.country .Cinquetext {
+        top: 2650px;
+}
+.country .newyorktext {
+        top: 2370px;
+
+}
+.country .newyorkimg{
+        width: 98%;
+}
+.country .santext {
+        top: 2650px;
+        left: 760px;
+}
+.country .sanimg {
+        width: 98%;
+}
+.country .pisatext {
+        top: 2370px;
+        left: 1145px;
+}
+.country .pisaimg {
+        width: 98%;
+}
+.country .paristext {
+        top: 2650px;
+        left: 1145px;
+}
+.country .parisimg {
+        width: 98%;
+}
+/* end of the country list */
+/* mail header */
+
+ .mailheader .mail {
+         padding: 12px;
+         width: 96%;
+ }
+ .mailheader .subscribe {
+         margin-top: 20px;
+         width: 7%;
+ }
+ /* end of the mail header  */
+/* contact info  */
+ .info2 {
+margin-bottom: 10px;
+ }
+ .contactinfo .inputinfo .name {
+         padding: 20px;
+         width: 97%;
+         font-size: 15px;
+ }
+ .contactinfo .sendbutton {
+width: 12%;
+ }
+ /* end of the contact info */
+/* the footer */
+  .footer {
+          font-size: 20px;
+        padding: 50px;
+  }
+/* end of the footer */
+
+}
